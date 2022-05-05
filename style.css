@@ -136,9 +136,7 @@ header img {
 
 nav {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	
+		
 	height: var(--nav-height);
 
 	position: fixed;
@@ -147,7 +145,22 @@ nav {
 	transform: translateX(-50%);
 }
 
+nav .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 nav.scroll {
 	background: var(--primary-color);
+	width: 100vw;
+}
+
+nav.scroll svg:nth-child(1) path {
+	fill: white;
+}
+
+nav.scroll svg:nth-child(2) path {
+	stroke: white;
 }
 
